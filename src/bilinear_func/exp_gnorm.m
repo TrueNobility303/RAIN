@@ -3,12 +3,6 @@ rng(42);
 % f(x,y) = xy
 % comparing RAIN, EG, EAG, R-EG
 
-% tuned examples 
-% 1. n = 900, tau = 0.1, sigma = 0.001
-% 2. n =  1600, tau = 0.05, sigma = 0.005
-% 3. n = 4000, tau = 0.01, sigma = 0.01
-% 4. n = 6000, tau = 0.005, sigma = 0.02
-
 n = 900;
 tau = 0.1;
 z0 = [10,10]';
