@@ -28,20 +28,20 @@ for i = 1:n
     EAG_gnorm(i) = norm(z);
 end
 
-R3EG_flow = zeros(n,2);
-R3EG_gnorm = zeros(n,1);
+RAIN_flow = zeros(n,2);
+RAIN_gnorm = zeros(n,1);
 z = z0;
 for i = 1:n
     w = z - tau * [z(2),-z(1)]' + normrnd(0,sigma,[2,1]);
     for  j = 1:i
-        w = w + tau / 100 * 1.0001^j * (R3EG_flow(j,:)' - z);
+        w = w + tau / 100 * 1.0001^j * (RAIN_flow(j,:)' - z);
     end
     z = z - tau * [w(2),-w(1)]' + normrnd(0,sigma,[2,1]); 
     for  j = 1:i
-        z = z + tau / 100  * 1.0001^j * (R3EG_flow(j,:)' - w) ;
+        z = z + tau / 100  * 1.0001^j * (RAIN_flow(j,:)' - w) ;
     end
-    R3EG_flow(i,:) = z;
-    R3EG_gnorm(i) = norm(z);
+    RAIN_flow(i,:) = z;
+    RAIN_gnorm(i) = norm(z);
 end
 
 EG_flow = zeros(n,2);
@@ -69,7 +69,7 @@ scatter(EAG_flow(:,1), EAG_flow(:,2),1);
 title('SEAG');
 
 subplot(2,2,4);
-scatter(R3EG_flow(:,1), R3EG_flow(:,2),1);
+scatter(RAIN_flow(:,1), RAIN_flow(:,2),1);
 title('RAIN');
 
 
