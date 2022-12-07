@@ -3,12 +3,6 @@
 % a wost case "delta,nu" function in 
 % paper:Performance of first-order methods for smooth convex minimization: A novel approach
 
-% tuned examples 
-% 1. n = 500, tau = 10, sigma = 0.001
-% 2. n = 700, tau = 10, sigma = 0.005
-% 3. n = 6000, tau = 1, sigma = 0.01
-% 4. n = 6000, tau = 1, sigma = 0.02
-
 rng(42);
 nu = 5e-5;
 delta = 1e-2;
