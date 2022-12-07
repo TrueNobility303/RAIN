@@ -6,5 +6,5 @@ We conduct numerical experiments on a bilinear function and a $(\delta,\nu)$ fun
 
 To reimplement the expeiments in our paper, please run 
 ```
-exp_xxx.m
+exp_gnorm.m
 ```
