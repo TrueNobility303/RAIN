@@ -1,6 +1,6 @@
 # RAIN (Recursive Anchoing IterRation)
 
-Offical codes for "Near-optimal algorithms for making the gradient small in stochastic minimax optimization."
+Official codes for "Near-optimal algorithms for making the gradient small in stochastic minimax optimization."
 
 We conduct numerical experiments on the following three hard instances:
 *  a convex-concave bilinear function (in the folder `src/bilinear_func`).
